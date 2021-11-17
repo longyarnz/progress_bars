@@ -95,7 +95,16 @@
         50%
       </div>
     </div>
+    <div>
+      <button type="button" class="btn btn-default btn-lg" onClick="completeProgress()">Finish</button>
+    </div>
   </div>
 
+  <script>
+    const completeProgress = () => {
+      $('.progress-bar').css('width', '100%');
+      $('.progress-bar').text('100%');
+    }
+  </script>
 </body>
 </html>
